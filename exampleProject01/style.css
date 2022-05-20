@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 2rem;
+}
+
+header p {
+    cursor: pointer;
+    font-size: xx-large;
+    margin-left: 5rem;
+    margin-top: -0.4rem;
+    margin-bottom: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header ul {
+    display: flex;
+    justify-content: end;
+    gap: 3rem;
+    margin-right: 5rem;
+    list-style: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+header ul li {
+    cursor: pointer;
+    transition: color 100ms;
+}
+
+header ul li:hover {
+    color: rgba(0, 0, 0, 0.581);
+}
+
+header button {
+    background-color: rgba(255, 170, 0, 0.799);
+    height: 2.5rem;
+    width: 7.8rem;
+    margin-top: -0.5rem;
+    border: 0;
+    box-shadow: 5px 2px 20px -8px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: background-color 1000ms;
+    font-size: large;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: rgba(198, 140, 25, 0.799);
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 26% 74%;
+        padding-top: 2rem;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: end;
+        gap: 2rem;
+        margin-right: 1rem;
+        list-style: none;
+        font-size: larger;
+        font-weight: bold;
+
+    }
+
+
+}
+
+/* xxxxxxxxxxxxxxxx HEADER SECTION ENDS HERE xxxxxxxxxxxxxxx  */
+
+.container {
+    height: 78vh;
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: 45% 60%;
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+.article-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.article-div h1 {
+    font-family: fantasy;
+    font-weight: lighter;
+    letter-spacing: 0.4rem;
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 1rem
+}
+
+.article-div h2 {
+    letter-spacing: 0.1rem;
+    color: rgba(0, 0, 0, 0.804);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem
+}
+
+.article-div p {
+    letter-spacing: 0.1rem;
+    color: rgba(0, 0, 0, 0.673);
+    margin-top: 1rem;
+    filter: blur(0.01rem);
+}
+
+.submit-form {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.submit-form input {
+    height: 6vh;
+    width: 19rem;
+    border: 1px solid;
+    background-color: rgba(226, 226, 226, 0.499);
+    padding-left: 2rem;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.75);
+}
+
+.submit-form button {
+    height: 6.3vh;
+    width: 8rem;
+    border: 1px solid;
+    background-color: rgba(255, 170, 0, 0.679);
+    font-weight: 800;
+    font-size: 1rem;
+    border-left: 0;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.75);
+}
+.img-div {
+    width: 50rem;
+   
+}
+.img-div img{
+    width: 50rem;
+}
